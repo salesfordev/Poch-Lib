@@ -41,5 +41,9 @@ $(document).ready(function () {
     btn.click(function () {
         divForm.show();
     });
-
+    
+    //Hide form by clicking cancel button
+    cancelBtn.click(function(){
+        divForm.hide();
+    });
 });
