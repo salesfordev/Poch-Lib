@@ -40,10 +40,30 @@ $(document).ready(function () {
     //display of the onclick form
     btn.click(function () {
         divForm.show();
+        btn.hide();
     });
-    
+
     //Hide form by clicking cancel button
-    cancelBtn.click(function(){
+    cancelBtn.click(function () {
         divForm.hide();
+        btn.show();
     });
-});
+
+    searchBtn.click(function () {
+        let searchTitle = $input1.val();
+        let searchAuthor = $input1.val();
+        if (searchTitle == '' && searchAuthor == '') {
+            alert("Veuillez saisir le titre d'un livre SVP....");
+        }  else {
+            let identifiant = '';
+            let title = '';
+            let author = '';
+            let description = '';
+            let img = '';
+
+            $.get("https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor" + searchTitle, function (response) {
+                console.log(response);
+            })};
+        })
+
+})

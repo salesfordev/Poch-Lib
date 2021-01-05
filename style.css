@@ -39,10 +39,9 @@ button {
 }
 
 input {
-    width: 100%;
-    display: inline-block;
+    display: block;
     flex-direction: row;
-   
+    width: 100%;
 }
 
 label {
