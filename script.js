@@ -22,7 +22,7 @@ $(document).ready(function () {
     $label2.appendTo(divForm);
 
     //Création of the search button
-    let searchBtn = $("<button id='search'>Rchercher</button>");
+    let searchBtn = $("<button id='search'>Rechercher</button>");
     searchBtn.appendTo(divForm);
 
     //Création of the cancel button
