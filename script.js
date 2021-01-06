@@ -49,6 +49,10 @@ $(document).ready(function () {
         btn.show();
     });
 
+    //Création of the contain DIV Result
+    let divResult = $('<div id="result"></div>');
+    $("#myBooks").after(divResult)
+
     searchBtn.click(function () {
         let searchTitle = $input1.val();
         let searchAuthor = $input1.val();
@@ -61,7 +65,7 @@ $(document).ready(function () {
             let description = '';
             let img = '';
 
-            $.get("https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor" + searchTitle, function (response) {
+            $.get("https://www.googleapis.com/books/v1/volumes?q=search+terms" + searchTitle, function (response) {
                 console.log(response);
             })};
         })
