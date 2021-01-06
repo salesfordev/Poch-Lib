@@ -46,6 +46,7 @@ $(document).ready(function () {
     //Hide form by clicking cancel button
     cancelBtn.click(function () {
         divForm.hide();
+        divResult.hide();
         btn.show();
     });
 
@@ -54,6 +55,7 @@ $(document).ready(function () {
     $("#myBooks").after(divResult)
 
     searchBtn.click(function () {
+        divResult.show();
         let searchTitle = $input1.val();
         let searchAuthor = $input1.val();
         if (searchTitle == '' && searchAuthor == '') {
@@ -75,9 +77,9 @@ $(document).ready(function () {
                     divCard.append(authors);
                     divCard.append(title);
                     divCard.append(img);
-                    divCard.appendTo(divResult)
+                    divCard.appendTo(divResult);
                 }
-            })};
-        })
+            })}
+        });
 
 })

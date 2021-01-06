@@ -75,3 +75,14 @@ label {
 
 }
 
+#result{
+    display: none;
+    border: solid 2px;
+}
+
+#card{
+    border:solid 3px;
+    display: inline-block;
+    background-color: rgb(219, 61, 61);
+}
+
