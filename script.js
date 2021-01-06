@@ -66,7 +66,17 @@ $(document).ready(function () {
             let img = '';
 
             $.get("https://www.googleapis.com/books/v1/volumes?q=search+terms" + searchTitle, function (response) {
-                console.log(response);
+                for (i = 0; i < response.items.length; i++) {
+                    let divCard = $("<div id='card" + i + "'></div>")
+                    authors = response.items[i].volumeInfo.authors
+                    title = response.items[i].volumeInfo.title
+                    
+
+                    divCard.append(authors);
+                    divCard.append(title);
+                    divCard.append(img);
+                    divCard.appendTo(divResult)
+                }
             })};
         })
 
