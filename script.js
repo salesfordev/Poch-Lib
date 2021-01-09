@@ -30,8 +30,8 @@ $(document).ready(function () {
     cancelBtn.appendTo(divForm);
 
     //Injection of the form in the html code
-    $("BUTTON").after(divForm);
-    $("BUTTON").after("<br/>");
+    $("button").after(divForm);
+    $("button").after("<br/>");
     $input1.before("<br/>");
     $label1.after("<br/>");
     $input2.before("<br/>");
@@ -72,13 +72,10 @@ $(document).ready(function () {
             let descrip = '';
             let image = '';
 
-
-
-
             $.get("https://www.googleapis.com/books/v1/volumes?q=search+terms" + searchTitle, function (response) {
-                
-            
+              
             $(divBox).empty();
+            
             for (i = 0; i < response.items.length; i++) {
                     divCard = $("<div id='container'  + i>" + "</div>");
                     let bookmark = $('<aside id="bmark"><i class="fa fa-bookmark"></i></aside>');
