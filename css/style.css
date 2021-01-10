@@ -74,5 +74,9 @@ body {
     margin: 5px;
     text-align: justify;
     overflow: auto; }
+    body #container #bmark {
+      float: right;
+      font-size: 30px;
+      color: #2d9281; }
 
 /*# sourceMappingURL=style.css.map */

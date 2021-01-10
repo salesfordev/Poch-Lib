@@ -80,11 +80,7 @@ button {
 
         
     }
-
-
-    
-    
-    
+   
 }
 #result {
     display: none;
@@ -93,6 +89,7 @@ button {
         display: flex;
         flex-wrap: wrap;
         height: 10%;
+       
     }
 
     #rcherche {
@@ -109,5 +106,11 @@ button {
     margin: 5px;
     text-align: justify;
     overflow: auto;
+    #bmark{
+        float: right;
+        font-size: 30px;
+        color: rgb(45, 146, 129)
+        
+    }
 }  
 }
