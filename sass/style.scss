@@ -6,6 +6,7 @@ body {
     padding: 20px;
     background-color: whitesmoke;
 
+
 *{
     box-sizing: border-box;
 }
@@ -84,11 +85,13 @@ button {
 }
 #result {
     display: none;
+    
     }
     #box {
-        display: flex;
+        display: block;
         flex-wrap: wrap;
         height: 10%;
+       margin: 0 auto;
        
     }
 
@@ -98,19 +101,41 @@ button {
         font-weight: bold;
     }
 #container{
+    background: blue;
+}
+.container{
     padding: 10px;
     float:left;
     border:solid 2px black;
+    border-radius: 7px;
     width:44%;
     height: 350px;
     margin: 5px;
     text-align: justify;
     overflow: auto;
+
     #bmark{
         float: right;
         font-size: 30px;
         color: rgb(45, 146, 129)
-        
+        }
+
+        .fa-bookmark:hover{
+              color: rgb(184, 22, 10);  
+              } 
+
+        #kmark.pointer{
+          cursor: pointer;
+        }
+
+        #bmarkpl{
+            float: right;
+            font-size: 30px;
+            color: rgb(45, 146, 129)
+            
+       
+        }
     }
+
+    
 }  
-}

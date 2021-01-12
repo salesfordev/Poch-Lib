@@ -101,7 +101,7 @@ body #rcherche {
   font-weight: bold;
 }
 
-body #container {
+body .container {
   padding: 10px;
   float: left;
   border: solid 2px black;
@@ -112,7 +112,7 @@ body #container {
   overflow: auto;
 }
 
-body #container #bmark {
+body .container #bmark {
   float: right;
   font-size: 30px;
   color: #2d9281;

@@ -49,6 +49,7 @@ $(document).ready(function () {
         $("#content").show();
         divResult.hide();
         btn.show();
+        $("content").show();
     });
 
     //Création of the contain DIV Result
@@ -62,8 +63,8 @@ $(document).ready(function () {
         divResult.show();
         $("#content").hide();
         let searchTitle = $input1.val();
-        let searchAuthor = $input1.val();
-        if (searchTitle == '' && searchAuthor == '') {
+        let searchAuthor = $input2.val();
+        if (searchTitle === '' && searchAuthor == '') {
             alert("Veuillez saisir le titre d'un livre SVP....");
         } else {
             let id = '';
@@ -72,22 +73,43 @@ $(document).ready(function () {
             let descrip = '';
             let image = '';
 
-            $.get("https://www.googleapis.com/books/v1/volumes?q=search+terms" + searchTitle, function (response) {
-              
-            $(divBox).empty();
-            
-            for (i = 0; i < response.items.length; i++) {
-                    divCard = $("<div id='container'  + i>" + "</div>");
-                    let bookmark = $('<aside id="bmark"><i class="fa fa-bookmark"></i></aside>');
-                    bookmark.appendTo(divCard);
+            $.get("https://www.googleapis.com/books/v1/volumes?q=" + searchTitle + searchAuthor, function (response) {
+
+                
+
+                $(divBox).empty();
+
+                for (i = 0; i < response.items.length; i++) {
 
                     title = $("<div class='center-align'><h4>Title: " + response.items[i].volumeInfo.title + "</h4>");
                     id = $("<div class='center-align black-text'><h4>Id: " + response.items[i].id + "</h4>");
                     author = $("<div class='center-align black-text'><h4>Author: " + response.items[i].volumeInfo.authors + "</h4>");
                     descrip = $("<div class='center-align black-text'><h4>Descrpiption : </br> " + response.items[i].volumeInfo.description + "</h4>");
                     image = $("<img src=" + response.items[i].volumeInfo.imageLinks.smallThumbnail + " >");
+                    let divCard = $("<div class='container' id='" + response.items[i].id + "'></div>");
+                    let bookmark = $('<aside id="bmark" class="bmark" ><i class="fa fa-bookmark"></i></aside>');
+                    let exsistingDivCard = $("#" + response.items[i].id);
 
+                    bookmark.click(function () {
 
+                        let bookInPocheList = $("#content").children("#" + divCard.attr("id"));
+                        console.log(divCard.id)
+                        if (bookInPocheList.length > 0) {
+                            console.log(bookInPocheList);
+                            divCard.remove();
+                        } else {
+                            if (exsistingDivCard.length > 1) {
+                                alert("Le livre à déjà été ajouté");
+                            } else {
+                                divCard.appendTo("#content");
+                                bookmark.children("i").removeClass();
+                                bookmark.children("i").addClass("fa fa-trash");
+                            }
+                        }
+
+                    })
+
+                    divCard.append(bookmark)
                     divCard.append(title);
                     divCard.append(id);
                     divCard.append(author);
@@ -95,9 +117,10 @@ $(document).ready(function () {
                     divCard.append(image);
                     divCard.appendTo(divBox);
                 }
-                
-            })
-            
+            }
+
+            )
+
         }
     });
 

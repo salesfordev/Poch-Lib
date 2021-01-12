@@ -58,23 +58,35 @@ body {
   body #result {
     display: none; }
   body #box {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
-    height: 10%; }
+    height: 10%;
+    margin: 0 auto; }
   body #rcherche {
     text-align: center;
     font-size: 20px;
     font-weight: bold; }
   body #container {
+    background: blue; }
+  body .container {
     padding: 10px;
     float: left;
     border: solid 2px black;
+    border-radius: 7px;
     width: 44%;
     height: 350px;
     margin: 5px;
     text-align: justify;
     overflow: auto; }
-    body #container #bmark {
+    body .container #bmark {
+      float: right;
+      font-size: 30px;
+      color: #2d9281; }
+    body .container .fa-bookmark:hover {
+      color: #b8160a; }
+    body .container #kmark.pointer {
+      cursor: pointer; }
+    body .container #bmarkpl {
       float: right;
       font-size: 30px;
       color: #2d9281; }
