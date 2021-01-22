@@ -11,12 +11,16 @@ body {
     box-sizing: border-box;
 }
 
-*#myBooks {
+img{
+    text-align: center;
+    max-width: 200px;
+    max-height: 200px;
+}
+#myBooks {
     text-align: center;
     width: 100%;
 
     .title {
-        border-radius: auto;
     width: 100%;
     border: 1px gray solid;
     background-color: rgb(207, 212, 216);
@@ -83,33 +87,41 @@ button {
     }
    
 }
+
+
 #result {
+    justify-content: center;
     display: none;
-    
+   
     }
     #box {
-        display: block;
+        display: flex;
         flex-wrap: wrap;
-        height: 10%;
-       margin: 0 auto;
+        justify-content: space-around;
+        
+        
+        
        
     }
 
     #rcherche {
+        
         text-align: center;
         font-size: 20px;
         font-weight: bold;
     }
 #container{
+    
     background: blue;
 }
 .container{
+    
     padding: 10px;
     float:left;
     border:solid 2px black;
-    border-radius: 7px;
+    border-radius: 17px;
     width:44%;
-    height: 350px;
+    height:300pt;
     margin: 5px;
     text-align: justify;
     overflow: auto;
@@ -121,13 +133,15 @@ button {
         }
 
         .fa-bookmark:hover{
-              color: rgb(184, 22, 10);  
+              color: rgb(25, 112, 3);  
               } 
 
         #kmark.pointer{
           cursor: pointer;
         }
 
+       
+        
         #bmarkpl{
             float: right;
             font-size: 30px;
@@ -135,7 +149,22 @@ button {
             
        
         }
+
+        
     }
 
     
 }  
+
+#pocheListe{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+}
+
+/*@media screen and (min-width: 1000px){
+    #search {
+        display: none;
+    }
+}*/

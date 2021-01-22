@@ -6,18 +6,21 @@ body {
   background-color: whitesmoke; }
   body * {
     box-sizing: border-box; }
-  body *#myBooks {
+  body img {
+    text-align: center;
+    max-width: 200px;
+    max-height: 200px; }
+  body #myBooks {
     text-align: center;
     width: 100%; }
-    body *#myBooks .title {
-      border-radius: auto;
+    body #myBooks .title {
       width: 100%;
       border: 1px gray solid;
       background-color: #cfd4d8;
       box-shadow: 9px 9px 11px gray; }
-    body *#myBooks hr {
+    body #myBooks hr {
       margin-top: 20px; }
-    body *#myBooks button {
+    body #myBooks button {
       background-color: #2d9281;
       color: #eee2e2;
       font-size: 1.2rem;
@@ -25,28 +28,28 @@ body {
       padding-bottom: 0.3rem;
       padding-right: 0.8rem;
       padding-left: 0.8rem; }
-    body *#myBooks #newBook {
+    body #myBooks #newBook {
       display: none;
       text-align: left;
       width: 100%;
       margin: auto; }
-      body *#myBooks #newBook label {
+      body #myBooks #newBook label {
         width: 100%;
         margin-top: 20px;
         display: inline-block;
         text-align: left; }
-        body *#myBooks #newBook label input {
+        body #myBooks #newBook label input {
           display: block;
           flex-direction: row;
           width: 100%; }
-      body *#myBooks #newBook #search {
+      body #myBooks #newBook #search {
         color: white;
         border: lime;
         margin-top: 20px;
         width: 150px;
         height: 40px;
         font-size: 15px; }
-      body *#myBooks #newBook #cancel {
+      body #myBooks #newBook #cancel {
         color: white;
         border: lime;
         font-size: 15px;
@@ -56,12 +59,12 @@ body {
         margin-top: 20px;
         background-color: #db3d3d; }
   body #result {
+    justify-content: center;
     display: none; }
   body #box {
-    display: block;
+    display: flex;
     flex-wrap: wrap;
-    height: 10%;
-    margin: 0 auto; }
+    justify-content: space-around; }
   body #rcherche {
     text-align: center;
     font-size: 20px;
@@ -72,9 +75,9 @@ body {
     padding: 10px;
     float: left;
     border: solid 2px black;
-    border-radius: 7px;
+    border-radius: 17px;
     width: 44%;
-    height: 350px;
+    height: 300pt;
     margin: 5px;
     text-align: justify;
     overflow: auto; }
@@ -83,12 +86,23 @@ body {
       font-size: 30px;
       color: #2d9281; }
     body .container .fa-bookmark:hover {
-      color: #b8160a; }
+      color: #197003; }
     body .container #kmark.pointer {
       cursor: pointer; }
     body .container #bmarkpl {
       float: right;
       font-size: 30px;
       color: #2d9281; }
+
+#pocheListe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+/*@media screen and (min-width: 1000px){
+    #search {
+        display: none;
+    }
+}*/
 
 /*# sourceMappingURL=style.css.map */
