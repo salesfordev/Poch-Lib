@@ -1,9 +1,18 @@
-# Bienvenue sur Poch'Lib !
+# Welcome to Poch'Lib !
+------
 ![Poch'Lib image](https://github.com/salesfordev/Poch-Lib/blob/beta/images/logo1.png)
 
 # Poch-Lib
 > Online Book Search Application, and then pick them up at the bookstore  : **" La Plume Enchantée "**
 > 
+
+-------------------------------------------------------------------------------------
+
+>### ScreenShots
+![Poch'Lib image](https://github.com/salesfordev/Poch-Lib/blob/beta/images/screen1.JPG)
+
+--------------------------------------------------------------------------------------
+
 ### Langages utilisés ?
 
 - HTML5
@@ -11,6 +20,8 @@
 - javaScript,
 - jQuery
 - Ajax
+
+---------------------------------------------------------------------------------------
 
 ### 1. Local version :
 > Uncompress Poch'Lib.zip file, open index.html with your browser
