@@ -13,7 +13,7 @@
 
 --------------------------------------------------------------------------------------
 
-## Langages utilisés ?
+##  Used technology to develop the application ?
 
 - HTML5
 - SASS/CSS3
@@ -31,6 +31,8 @@
 ### 2) Online vesion:
 > - Copy the following link :  https://salesfordev.github.io/Poch-Lib/
 > - Paste it in the address bar of your favorite browser.
-# Now you can enjoy your new booksearch application.
-
-## Developed and configured by : ATMANE Hamed
+>  Now you can enjoy your new booksearch application.
+-------------------------------------------------------------------------------------------
+> Pour toute question ou demande d'assistance concernant le fonctionnement de l'application, vous pouvez adresser votre requette > > par mail à : salesfordev@devland.com.
+-------------------------------------------------------------------------------------------
+### Developed and configured by : ATMANE Hamed
