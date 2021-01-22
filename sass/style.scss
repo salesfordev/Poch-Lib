@@ -1,3 +1,20 @@
+.container{
+    
+    padding: 10px;
+    float:left;
+    border:solid 2px black;
+    border-radius: 17px;
+    width:44%;
+    height:300pt;
+    margin: 5px;
+    text-align: justify;
+    overflow: auto;
+
+   
+
+    
+}  
+
 body {
     
     font-family: 'PT Serif', serif;
@@ -5,14 +22,11 @@ body {
     margin: 20px;
     padding: 20px;
     background-color: whitesmoke;
-
-
-*{
     box-sizing: border-box;
 }
 
 img{
-    text-align: center;
+    margin-left: 30%;
     max-width: 200px;
     max-height: 200px;
 }
@@ -114,47 +128,31 @@ button {
     
     background: blue;
 }
-.container{
-    
-    padding: 10px;
-    float:left;
-    border:solid 2px black;
-    border-radius: 17px;
-    width:44%;
-    height:300pt;
-    margin: 5px;
-    text-align: justify;
-    overflow: auto;
 
-    #bmark{
+#bmark{
+    float: right;
+    font-size: 30px;
+    color: rgb(45, 146, 129)
+}
+
+    .fa-bookmark:hover{
+          color: rgb(25, 112, 3);  
+          } 
+
+    #kmark.pointer{
+      cursor: pointer;
+    }
+
+   
+    
+    #bmarkpl{
         float: right;
         font-size: 30px;
         color: rgb(45, 146, 129)
-        }
-
-        .fa-bookmark:hover{
-              color: rgb(25, 112, 3);  
-              } 
-
-        #kmark.pointer{
-          cursor: pointer;
-        }
-
-       
         
-        #bmarkpl{
-            float: right;
-            font-size: 30px;
-            color: rgb(45, 146, 129)
-            
-       
-        }
-
-        
+   
     }
 
-    
-}  
 
 #pocheListe{
     display: flex;
@@ -163,8 +161,44 @@ button {
         
 }
 
-/*@media screen and (min-width: 1000px){
-    #search {
-        display: none;
+
+        h2{
+            text-align: center;
+        }
+
+@media   (max-width: 850px){
+    .container {
+        width: 100%;
+        font-size: 15px;
     }
-}*/
+}
+    
+
+
+@media screen and  (max-width: 650px){
+    input{
+        height: 30px;
+    }
+
+}
+
+@media screen and  (max-width: 650px){
+    label{
+     font-size: 20px;
+    }
+
+}
+
+@media screen and  (max-width: 650px){
+    #search{
+    margin-left: 30%;
+    }
+
+}
+
+@media screen and  (max-width: 650px){
+    #cancel{
+        margin-left: 30%;
+    }
+
+}
