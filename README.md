@@ -3,7 +3,7 @@
 ![Poch'Lib image](https://github.com/salesfordev/Poch-Lib/blob/beta/images/logo1.png)
 
 # Poch-Lib
-> Online Book Search Application, and then pick them up at the bookstore  : **" La Plume Enchantée "**
+> Search for your books online from poch'lib, and pick them up at the bookstore : **" La Plume Enchantée "**
 > 
 
 -------------------------------------------------------------------------------------
@@ -22,12 +22,15 @@
 - Ajax
 
 ---------------------------------------------------------------------------------------
-
-### Local version :
 ## launching of the application :
+### 1) Local version :
 > - Uncompress Poch'Lib.zip file
 > - Open index.html with your browser
 > - Select your favorite books from the comfort of your own home, and we will be happy to prepare them for you.
 ----------------
+### 2) Online vesion:
+> - Copy the following link :  https://salesfordev.github.io/Poch-Lib/
+> - Paste it in the address bar of your favorite browser.
+# Now you can enjoy your new booksearch application.
 
 ## Developed and configured by : ATMANE Hamed
