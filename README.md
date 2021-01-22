@@ -33,6 +33,6 @@
 > - Paste it in the address bar of your favorite browser.
 >  Now you can enjoy your new booksearch application.
 -------------------------------------------------------------------------------------------
-> Pour toute question ou demande d'assistance concernant le fonctionnement de l'application, vous pouvez adresser votre requette > > par mail à : salesfordev@devland.com.
+> For any question or request for assistance concerning the operation of the application, you can send your request by e-mail to : salesfordev@devland.com.
 -------------------------------------------------------------------------------------------
 ### Developed and configured by : ATMANE Hamed
