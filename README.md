@@ -8,12 +8,12 @@
 
 -------------------------------------------------------------------------------------
 
->### ScreenShots
+>## ScreenShots
 ![Poch'Lib image](https://github.com/salesfordev/Poch-Lib/blob/beta/images/screen1.JPG)
 
 --------------------------------------------------------------------------------------
 
-### Langages utilisés ?
+## Langages utilisés ?
 
 - HTML5
 - SASS/CSS3
@@ -23,6 +23,11 @@
 
 ---------------------------------------------------------------------------------------
 
-### 1. Local version :
-> Uncompress Poch'Lib.zip file, open index.html with your browser
-> select your favorite books from the comfort of your own home, and we will be happy to prepare them for you.
+### Local version :
+## launching of the application :
+> - Uncompress Poch'Lib.zip file
+> - Open index.html with your browser
+> - Select your favorite books from the comfort of your own home, and we will be happy to prepare them for you.
+----------------
+
+## Developed and configured by : ATMANE Hamed
